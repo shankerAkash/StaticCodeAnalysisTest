@@ -11,6 +11,8 @@ import com.project.staticCodeAnalysis.model.TestModel;
 @Service
 public class TestService {
 
+	public static final String ConfigDid = "^did:matrix:[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*(?:\\.[a-zA-Z]{2,})$";
+
 	private TestRepository testRepository;
 
 	public TestModel addTest(TestModel model) {
